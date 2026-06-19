@@ -1,0 +1,108 @@
+[
+  {
+    "ContainingType": "APIsNABH.Controllers.AuthController",
+    "Method": "getToken",
+    "RelativePath": "api/Auth/getToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ApiKey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ApiSecret",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIsNABH.Controllers.Claims",
+    "Method": "AddClaim",
+    "RelativePath": "api/Claims/AddClaim",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "i",
+        "Type": "APIsNABH.Models.AssessmentDataForOtherPortal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIsNABH.Controllers.Claims",
+    "Method": "GetClaimDetail",
+    "RelativePath": "api/Claims/GetClaimDetail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIsNABH.Controllers.Claims",
+    "Method": "GetClaimListByAssessorIdOrPanNumber",
+    "RelativePath": "api/Claims/GetClaimListByAssessorIdOrPanNumber",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AssessorId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PanNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIsNABH.Controllers.Claims",
+    "Method": "UpdateClaim",
+    "RelativePath": "api/Claims/UpdateClaim",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "i",
+        "Type": "APIsNABH.Models.AssessmentDataForOtherPortal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIsNABH.Controllers.EventAndTrainingUserController",
+    "Method": "CreateUser",
+    "RelativePath": "api/EventAndTrainingUser/CreateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "APIsNABH.dto.DtoCreateUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

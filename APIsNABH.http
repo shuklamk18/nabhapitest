@@ -1,0 +1,6 @@
+@APIsNABH_HostAddress = http://localhost:5069
+
+GET {{APIsNABH_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
