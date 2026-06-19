@@ -1,0 +1,19 @@
+version: 0.0
+os: windows
+
+files:
+  - source: publish
+    destination: C:\inetpub\wwwroot\NABHAPI-TEST
+
+hooks:
+  ApplicationStop:
+    - location: scripts\stop-iis.ps1
+      timeout: 300
+
+  BeforeInstall:
+    - location: scripts\clean.ps1
+      timeout: 300
+
+  ApplicationStart:
+    - location: scripts\start-iis.ps1
+      timeout: 300
