@@ -1,0 +1,1 @@
+Remove-Item "C:\inetpub\wwwroot\NABHAPI\*" -Recurse -Force -ErrorAction SilentlyContinue
