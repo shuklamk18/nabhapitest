@@ -1,0 +1,1511 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\NABH\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\NABH\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\NABH\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\NABH\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3A2ADBA-15E2-4512-99A3-182468739267}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFModels</RootNamespace>
+    <AssemblyName>EFModels</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\NABH\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\NABH\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\NABH\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NabhEFModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NabhEFModel.edmx</DependentUpon>
+      <LastGenOutput>NabhEFModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="NabhEFModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NabhEFModel.edmx</DependentUpon>
+      <LastGenOutput>NabhEFModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABPMJAYScoreSheetRight.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccessRight.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccreditationAndCertificationDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccreditationAndCertificationDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccreditationFee.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccreditationFeesActive.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccreditationTime.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Action.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Action1.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdminActionLog.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AERBApprovalDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AERBLicenseType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllopathicClinicsApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllopathicClinicsApplication2ndEd.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Announcement.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APIAuditLog.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApiPermission.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApiUser.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Appeal.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppealsDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppealsRemark.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppealsStatu.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Application.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationAccCriteria.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationCurrentStatu.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationEditPermission.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationStage.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationStatu.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationStatusHistory.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationStatusUpdatedByACMember.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationTimeLine.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="applicationTypeView.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Application_RenewalStatus.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ARTClinicsApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ASPStateTempApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ASPStateTempSession.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="assesmentSchedule.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentDataForOtherPortal.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentSummary.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorAssignment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorAssignmentDate.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorAvailability.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorBill.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorBlogDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorBloodBankNC.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorCapacity.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorCategory.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorCertificate.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorClaim.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorClaimAccountType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorClaimLogin.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorClaimStatu.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorComment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorConfidentiality.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorDiscussionBlog.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorEvidenceAttachment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorNonCompliance.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorNonComplianceObservation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorObservation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorObservationsRemark.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorQualification.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorQualificationMaster.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorsRemark.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssignedAppTypesToUser.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssignmentDateDataForOtherPortal.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AyurvedaApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ayurveda_OthersTreatment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AYUSHApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AyushCenter_insert_students.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AyushHospitalEntryLevel.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankDetailsOffLinePayment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BloodBankApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BloodBankType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BloodBankTypeValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BloodStorageCentreApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BloodStorageCentreAssociatedWithBloodBank.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BloodStorageCentreType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BloodStorageCentreTypeValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BoardMeeting.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BoardMeetingDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BoardMeetingParticipant.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CareHomeApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CertBackground.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGHSApplicant.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGHSApplicantChangeLog.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGHSRecommendedList.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHCApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHCService.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CIGeneralInfo.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CIMasterIndicatorName.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="circular.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CIValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClaimProgramme.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClaimTask.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClaimTaskActivity.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicalServiceType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicalServiceValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicalTrialGeneralInfo.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicalTrialSiteInfo.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicTypeValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClosedCertBackground.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClosedTrainingDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Complaint.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComplaintResponseDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComplaintsRemark.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactPerson.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRSchemeApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTDecForm.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTDocumentAttachment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTDocumentValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerData.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DaysWorkingHour.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeclarationFormAttachment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeficienciesReport.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Demo_CopyOfHCO.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Demo_DataEntryLevel.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Demo_DataSHCO.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Demo_EntryLevelHCO.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Demo_IterativeHCO.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Demo_IterativeSHCO.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DentalClinicsApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DentalEquipment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DentalFacilitiesApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DentalLabData.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DentalOutDepartment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DermatologyClinicsApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsofManual.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsofManualValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiagnosticEquipValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DigitalHealth_MITRA_Empanelment_Applications.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentAttachment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ECDeclarartionForm.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EchsApplicant.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EchsApplicantChangeLog.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ECHSRecommendedList.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmegencyEquipValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmergencyApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmergencyBedOther.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmergencyData.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmergencyEquipment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmergencyStaffValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntrylevelAyushCenterapplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntryLevelDentalClinicsApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entrylevelshcoapplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entry_Statutory_Compliances.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Equipments2.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentsMI.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EthicsCommitteeInfo.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EventAddress.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EventAttachment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="eventpaymentDetailRemark.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EvidenceAttachment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EvidenceAttachmentBloodBank.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EvidenceAttachmentOther.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EyeApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EyeOtherBedInformation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBackMaster.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FinalAssessmentReport.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FOGSIApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ForwardedComplaint.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getAllPaymentDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupDiscount.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HCOAccreditedList.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HCOAccreditedList_Bak.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HCOAccreditedList_temp.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HCOApplicantChangeLog.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HCOApplicantList.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HCOApplicantList_temp.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HCOApplicantList_temp2.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HCOBulkPaymentDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HCOPanNumber.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HCOProgressiveList.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HCOScopeAndCertificateList.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HomeopathyApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalEntryLevel.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalNumberOfBed.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalOthersBedInformation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IEvent.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IEventStatu.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IEventType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InC.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualEducationExperience.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfectionControlClinicChecklist.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfectionControlClinicChecklistValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfectionControlEquipmentChecklist.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InfectionControlEquipmentChecklistValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientCare.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="insertshcostaffinfo.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Insertshco_clinicalnAdmin.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Insert_Shco_diagnosticService.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="insert_shco_listambulatory.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="insert_Statutory_Compliances.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InvestigatorDecForm.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InvestigatorsInfo.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IOrganization.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IRCAApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IRCA_CheckPoints.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IRCA_CheckPoints2.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IRCA_CheckPointsFileUpload.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IRCA_CheckPointsFileUpload2.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IRCA_CheckPointsForStaff.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IRCA_CheckPointsValues.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Journal.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JournalCategory.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JournalFile.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JournalOrder.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratoryEquipment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratoryPersonal.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratoryPersonnel.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratoryTest.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LabServiceValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Layout.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LicenseAttachment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LicenseType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LicenseValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginLog.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MainServicesValueCareHome.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ManayataScoreSheetRight.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mapAssessmentTypeName.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mapAssessorClaimWithAssessorAssignment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MapAssessorNonComplianceObservationAndScoreSheetValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mapClaimFee.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoard.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageComment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MISApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MiscellaneousExpense.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="misRegistrationDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MitraApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MitraEnclosure.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MitraHCOsupported.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MitraIndvInfrastructure.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MitraOrgInfrastructure.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MitraProfessionalsEnclosure.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MITRA_Empanelment_Applications.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MLPApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MLPLaboratoryPersonal.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MLPOrganizationChart.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modality.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModalityValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="month.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MostFrequentData.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MVTF2Application.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MVTFApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MVTFBranchDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MVTFFacility.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MVTFGeneralPolicy.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MVTFHospitalList.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MVTFOrganisationChart.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MVTFPatientDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MVTFPrivacy.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MVTFStaffInformation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MVTFStaffTrainingInfo.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NabhAttachment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NabhClosedEvent.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NabhEFModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NabhEFModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NabhEFModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NabhEFModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NabhEFModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NabhEvent.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NabhEventMaster.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NabhEventOrder.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NABHEventPaymentetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NABHStandard.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NabhStandardRequirement.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NetBanking.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NetBankingPaymentDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NewAssessorNonComplianceObservation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NursingApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NursingClinicalValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NursingOtherInformation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NursingStaffDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OPDIPD.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="otherEMPHCODetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="otherHCODetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OtherServicesValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OTPgenerateForClaim.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OutPatientService.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Panchakarmaapplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PanchkarmaBedInformation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Participant.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentArchive.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentHistory.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentTransactionDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PHCApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PHCService.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="placelocation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PMJAYApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PmJayDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PmJayQuestion.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PMJAYScoreSheetMaster.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PmJayValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="POForClaimForm.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PreAssessmentReport.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PreAssessmentReportValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProcesssAssessorClaimFormLog.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Professional.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilesAccessRightsLink.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramOfficer.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDeptValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectUserDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicNotice.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAPApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAPOtherInfo.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAPOtherInfoMaster.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAPService.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAPSpeciality.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QAPSupportDept.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QualityAndsafetyChecklistclinic.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QualityAndsafetyChecklistclinicValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QualityManualAssignedToAssessor.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QualityManualForwardStatu.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QualityManualReport.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QualityUpload.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferenceCode.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferenceDocumentsMaster.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RemarkByACMember.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewMaster.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewRemark.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewUpdate.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SATRight.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SaveDigitalHealthApplicantList.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Scope.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScopeByAssessor.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScopeCertificationValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScopeOfAccreditation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScopeServiceValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScopeSpecialities2.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScopeSpeciality.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScopeSpecialityHospital.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScopeValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreSheetMaster.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreSheetMasterOtherValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreSheetValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SecretariatMemberCapacity.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SecretariatMemberDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelfAssessmentAttachment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelfAssessmentOtherValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelfAssessmentToolkit.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelfAssessmentToolkitNCObservation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SelfAssessmentValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceArea.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHCOApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="shcoex.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShcoSpeciality.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="shcostaffinfo.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="shco_AOAclinicalsupport.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="shco_app.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="shco_clinicalnAdmin.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="shco_clinicalsupport.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Shco_diagnosticService.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="shco_insert_students.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShortForAssessorTranning.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SiddhaApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialityMaster.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffInformation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffInformationAttachment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffInformationEye.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffInformationMLP.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffInformationValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffInformationValueEye.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffInformation_BB.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StandardInventory.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StandardOrder.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STATE.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Statutory_Compliances.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StokreApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StrokeApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInformation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInformationEyeCare.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupportDepartmentValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SurveillanceReport.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SurveyFeedback.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblABDMFacility.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAccessType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblACDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAgreemantDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblApiKey.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblApiRequestLog.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblassessorprofilepic.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssessorTrainingNominatedBy.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAudit.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAyurveda_Clinical.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContactDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContactu.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEfile.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblError.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblHCOPI.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInfectionCtrl.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInfectionCtrlmaster.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInfectionCtrlvalue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblModule.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOrganisation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPrivilege.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProfile.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblProject.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectDept.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectDeptStatu.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblReference.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblReferenceHFRMapping.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRole.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRoleDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRoles_Profile.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblScoreSheetRight.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSubUTRNumber.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTrainingfeedback.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTrainingTest.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUser.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUsersInformation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblUserType.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWSOApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TelephoneDetail.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Thread.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ThreadComment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ThreadDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ThreadStatu.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TLDStaffInformation.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Trainingcertificate.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnaniApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UploadDocument.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserLock.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserUndertaking.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VerifiedDocNumber.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VisitorUniqueID.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_GetSizeHCOForPayment.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WCService.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WellnessCenterApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkshopApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YogaApplication.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YogaServiceValue.cs">
+      <DependentUpon>NabhEFModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="NabhEFModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NabhEFModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="NabhEFModel.edmx.diagram">
+      <DependentUpon>NabhEFModel.edmx</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NABH\BusinessLayer\BusinessLayer.csproj">
+      <Project>{B72F58E7-CDAE-4882-8F07-A20A2304A2BF}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51857</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44301/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\NABH\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\NABH\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\NABH\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\NABH\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\NABH\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\NABH\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <Import Project="..\NABH\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\NABH\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

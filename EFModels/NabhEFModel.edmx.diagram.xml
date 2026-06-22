@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="67d7b179707d454398cd6727637886a2" Name="Diagram1">
+        <EntityTypeShape EntityType="nabhModel.AccreditationFee" Width="1.5" PointX="3" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.AccreditationTime" Width="1.5" PointX="5.25" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.AdminActionLog" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.Application" Width="1.5" PointX="3" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.ApplicationStatu" Width="1.5" PointX="0.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.ApplicationTimeLine" Width="1.5" PointX="5.25" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.ApplicationType" Width="1.5" PointX="0.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.AssessmentType" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.AssessorAssignmentDate" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.AssessorBill" Width="1.5" PointX="15.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.AssessorCapacity" Width="1.5" PointX="6.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.AssessorClaim" Width="1.5" PointX="13" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.AssessorClaimAccountType" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.AssessorClaimStatu" Width="1.5" PointX="10.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.City" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.ClaimProgramme" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.ClaimTask" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.ClaimTaskActivity" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.Country" Width="1.5" PointX="5.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.HCOAccreditedList" Width="1.5" PointX="8" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.HCOApplicantList" Width="1.5" PointX="5.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.LoginLog" Width="1.5" PointX="7.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.mapClaimFee" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.month" Width="1.5" PointX="12.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.NabhEvent" Width="1.5" PointX="9.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.NabhEventMaster" Width="1.5" PointX="11.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.NabhEventOrder" Width="1.5" PointX="13.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.NABHEventPaymentetail" Width="1.5" PointX="15.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.otherHCODetail" Width="1.5" PointX="8" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.ReferenceCode" Width="1.5" PointX="8.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.SATRight" Width="1.5" PointX="15.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.SelfAssessmentAttachment" Width="1.5" PointX="5.25" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.SelfAssessmentOtherValue" Width="1.5" PointX="8.25" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.SelfAssessmentToolkit" Width="1.5" PointX="3" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.SelfAssessmentValue" Width="1.5" PointX="8.25" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.Setting" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.STATE" Width="1.5" PointX="11.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.tblModule" Width="1.5" PointX="13.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.tblProfile" Width="1.5" PointX="15.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.tblReferenceHFRMapping" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.tblRole" Width="1.5" PointX="1.5" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.tblScoreSheetRight" Width="1.5" PointX="17.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.tblSubUTRNumber" Width="1.5" PointX="17.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.UserUndertaking" Width="1.5" PointX="17.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.VerifiedDocNumber" Width="1.5" PointX="5.25" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.VisitorUniqueID" Width="1.5" PointX="17.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.AssessorClaimLogin" Width="1.5" PointX="17.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nabhModel.NABHStandard" Width="1.5" PointX="10.75" PointY="18.75" IsExpanded="true" />
+        <AssociationConnector Association="nabhModel.FK_AccreditaitonFees_ApplicationType" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_AccreditationTime_Applications" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_Applications_ApplicationStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_Applications_ApplicationType" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_ReferenceCode_Applications" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_SelfAssessmentAttachment_Applications" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_SelfAssessmentOtherValues_Applications" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_SelfAssessmentValues_Applications" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_TimeLine_Applications" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_VerifiedDocNumber_Applications" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_ApplicationStatus_tblRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_ApplicationTimeLine_AssessmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_ReferenceCode_ApplicationType" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_SelfAssessmentToolkit_ApplicationType" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK__AssessorB__Claim__3DD3EC75" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_AssessorClaim_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_AccreditationCertificationProgrammeId_ClaimProgrammeId" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_ProgramId_ClaimTaskId" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_ActivityTypeId_ClaimTaskActivityId" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_HCOAccreditedList_HCOApplicantList" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_otherHCODeatil_HCOApplicantList" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_SelfAssessmentAttachment_SelfAssessmentToolkit" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_SelfAssessmentOtherValues_SelfAssessmentToolkit" ManuallyRouted="false" />
+        <AssociationConnector Association="nabhModel.FK_SelfAssessmentValues_SelfAssessmentToolkit" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="nabhModel.ProcesssAssessorClaimFormLog" Width="1.5" PointX="13" PointY="18.75" />
+        <AssociationConnector Association="nabhModel.FK_ProcesssAssessorClaimFormLog_AssessorClaimStatus" />
+        <EntityTypeShape EntityType="nabhModel.HospitalNumberOfBed" Width="1.5" PointX="5.25" PointY="34.875" />
+        <EntityTypeShape EntityType="nabhModel.HospitalOthersBedInformation" Width="1.5" PointX="5.25" PointY="28.875" />
+        <EntityTypeShape EntityType="nabhModel.PanchkarmaBedInformation" Width="1.5" PointX="20.375" PointY="0.75" />
+        <AssociationConnector Association="nabhModel.FK_HospitalNumberOfBeds_Applications" />
+        <AssociationConnector Association="nabhModel.FK_HospitalOthersBedInformation_Applications" />
+        <EntityTypeShape EntityType="nabhModel.ABPMJAYScoreSheetRight" Width="1.5" PointX="17.25" PointY="32.25" />
+        <EntityTypeShape EntityType="nabhModel.AccessRight" Width="1.5" PointX="21.75" PointY="91" />
+        <EntityTypeShape EntityType="nabhModel.AccreditationAndCertificationDetail" Width="1.5" PointX="8.25" PointY="420" />
+        <EntityTypeShape EntityType="nabhModel.AccreditationAndCertificationDocument" Width="1.5" PointX="10.5" PointY="420.375" />
+        <EntityTypeShape EntityType="nabhModel.AccreditationFeesActive" Width="1.5" PointX="25.375" PointY="14.125" />
+        <EntityTypeShape EntityType="nabhModel.Action" Width="1.5" PointX="25.375" PointY="10.125" />
+        <EntityTypeShape EntityType="nabhModel.Action1" Width="1.5" PointX="25.375" PointY="17.125" />
+        <EntityTypeShape EntityType="nabhModel.AERBApprovalDetail" Width="1.5" PointX="20.25" PointY="41.375" />
+        <EntityTypeShape EntityType="nabhModel.AERBLicenseType" Width="1.5" PointX="18" PointY="53" />
+        <EntityTypeShape EntityType="nabhModel.AllopathicClinicsApplication" Width="1.5" PointX="8.25" PointY="226.875" />
+        <EntityTypeShape EntityType="nabhModel.AllopathicClinicsApplication2ndEd" Width="1.5" PointX="27.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.Announcement" Width="1.5" PointX="27.375" PointY="8.125" />
+        <EntityTypeShape EntityType="nabhModel.Appeal" Width="1.5" PointX="25.375" PointY="20.125" />
+        <EntityTypeShape EntityType="nabhModel.AppealsRemark" Width="1.5" PointX="27.375" PointY="12.125" />
+        <EntityTypeShape EntityType="nabhModel.AppealsStatu" Width="1.5" PointX="27.375" PointY="15.125" />
+        <EntityTypeShape EntityType="nabhModel.Application_RenewalStatus" Width="1.5" PointX="27.375" PointY="18.125" />
+        <EntityTypeShape EntityType="nabhModel.ApplicationAccCriteria" Width="1.5" PointX="6" PointY="53.125" />
+        <EntityTypeShape EntityType="nabhModel.ApplicationCurrentStatu" Width="1.5" PointX="26.25" PointY="23.5" />
+        <EntityTypeShape EntityType="nabhModel.ApplicationEditPermission" Width="1.5" PointX="8.25" PointY="354.25" />
+        <EntityTypeShape EntityType="nabhModel.ApplicationStage" Width="1.5" PointX="6" PointY="46.25" />
+        <EntityTypeShape EntityType="nabhModel.ApplicationStatusHistory" Width="1.5" PointX="29.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.ApplicationStatusUpdatedByACMember" Width="1.5" PointX="23.25" PointY="10.125" />
+        <EntityTypeShape EntityType="nabhModel.ARTClinicsApplication" Width="1.5" PointX="8.25" PointY="456" />
+        <EntityTypeShape EntityType="nabhModel.ASPStateTempApplication" Width="1.5" PointX="27.375" PointY="21.125" />
+        <EntityTypeShape EntityType="nabhModel.ASPStateTempSession" Width="1.5" PointX="29.375" PointY="5.125" />
+        <EntityTypeShape EntityType="nabhModel.assesmentSchedule" Width="1.5" PointX="22.25" PointY="52.125" />
+        <EntityTypeShape EntityType="nabhModel.AssessmentSummary" Width="1.5" PointX="22.25" PointY="65.375" />
+        <EntityTypeShape EntityType="nabhModel.AssessorAssignment" Width="1.5" PointX="20" PointY="30.875" />
+        <EntityTypeShape EntityType="nabhModel.AssessorAvailability" Width="1.5" PointX="3" PointY="52.375" />
+        <EntityTypeShape EntityType="nabhModel.AssessorBlogDocument" Width="1.5" PointX="37.625" PointY="33.5" />
+        <EntityTypeShape EntityType="nabhModel.AssessorBloodBankNC" Width="1.5" PointX="22.25" PointY="25.125" />
+        <EntityTypeShape EntityType="nabhModel.AssessorCategory" Width="1.5" PointX="3.75" PointY="50" />
+        <EntityTypeShape EntityType="nabhModel.AssessorCertificate" Width="1.5" PointX="3" PointY="27.5" />
+        <EntityTypeShape EntityType="nabhModel.AssessorComment" Width="1.5" PointX="37.625" PointY="36.25" />
+        <EntityTypeShape EntityType="nabhModel.AssessorConfidentiality" Width="1.5" PointX="8.25" PointY="278.375" />
+        <EntityTypeShape EntityType="nabhModel.AssessorDiscussionBlog" Width="1.5" PointX="35.375" PointY="34.5" />
+        <EntityTypeShape EntityType="nabhModel.AssessorEvidenceAttachment" Width="1.5" PointX="24.5" PointY="63" />
+        <EntityTypeShape EntityType="nabhModel.AssessorNonCompliance" Width="1.5" PointX="22.25" PointY="59.75" />
+        <EntityTypeShape EntityType="nabhModel.AssessorNonComplianceObservation" Width="1.5" PointX="22.25" PointY="30.75" />
+        <EntityTypeShape EntityType="nabhModel.AssessorObservation" Width="1.5" PointX="22.25" PointY="56.5" />
+        <EntityTypeShape EntityType="nabhModel.AssessorObservationsRemark" Width="1.5" PointX="24.5" PointY="56.5" />
+        <EntityTypeShape EntityType="nabhModel.AssessorQualificationMaster" Width="1.5" PointX="3.75" PointY="67" />
+        <EntityTypeShape EntityType="nabhModel.AssessorQualification" Width="1.5" PointX="3" PointY="35.75" />
+        <EntityTypeShape EntityType="nabhModel.AssessorsRemark" Width="1.5" PointX="25.5" PointY="38.375" />
+        <EntityTypeShape EntityType="nabhModel.AssignedAppTypesToUser" Width="1.5" PointX="23" PointY="14.25" />
+        <EntityTypeShape EntityType="nabhModel.Ayurveda_OthersTreatment" Width="1.5" PointX="29.375" PointY="9.125" />
+        <EntityTypeShape EntityType="nabhModel.AyurvedaApplication" Width="1.5" PointX="8.25" PointY="255.125" />
+        <EntityTypeShape EntityType="nabhModel.AYUSHApplication" Width="1.5" PointX="27.375" PointY="31.125" />
+        <EntityTypeShape EntityType="nabhModel.AyushHospitalEntryLevel" Width="1.5" PointX="29.375" PointY="31.125" />
+        <EntityTypeShape EntityType="nabhModel.BankDetailsOffLinePayment" Width="1.5" PointX="8.25" PointY="202.5" />
+        <EntityTypeShape EntityType="nabhModel.BloodBankApplication" Width="1.5" PointX="8.25" PointY="286.75" />
+        <EntityTypeShape EntityType="nabhModel.BloodBankType" Width="1.5" PointX="21" PointY="81.875" />
+        <EntityTypeShape EntityType="nabhModel.BloodBankTypeValue" Width="1.5" PointX="23.25" PointY="41.875" />
+        <EntityTypeShape EntityType="nabhModel.BloodStorageCentreApplication" Width="1.5" PointX="8.25" PointY="376.875" />
+        <EntityTypeShape EntityType="nabhModel.BloodStorageCentreAssociatedWithBloodBank" Width="1.5" PointX="8.25" PointY="224.125" />
+        <EntityTypeShape EntityType="nabhModel.BloodStorageCentreType" Width="1.5" PointX="37.375" PointY="7.125" />
+        <EntityTypeShape EntityType="nabhModel.BloodStorageCentreTypeValue" Width="1.5" PointX="8.25" PointY="180.125" />
+        <EntityTypeShape EntityType="nabhModel.BoardMeetingParticipant" Width="1.5" PointX="31.375" PointY="36.125" />
+        <EntityTypeShape EntityType="nabhModel.BoardMeeting" Width="1.5" PointX="33.375" PointY="38.125" />
+        <EntityTypeShape EntityType="nabhModel.CareHomeApplication" Width="1.5" PointX="8.25" PointY="194.75" />
+        <EntityTypeShape EntityType="nabhModel.CGHSApplicant" Width="1.5" PointX="35.375" PointY="27" />
+        <EntityTypeShape EntityType="nabhModel.CGHSApplicantChangeLog" Width="1.5" PointX="37.625" PointY="29.625" />
+        <EntityTypeShape EntityType="nabhModel.CGHSRecommendedList" Width="1.5" PointX="37.625" PointY="25.5" />
+        <EntityTypeShape EntityType="nabhModel.CHCApplication" Width="1.5" PointX="8.25" PointY="487.25" />
+        <EntityTypeShape EntityType="nabhModel.CHCService" Width="1.5" PointX="8.25" PointY="360.125" />
+        <EntityTypeShape EntityType="nabhModel.CIGeneralInfo" Width="1.5" PointX="40.375" PointY="6.125" />
+        <EntityTypeShape EntityType="nabhModel.CIMasterIndicatorName" Width="1.5" PointX="40.375" PointY="12.125" />
+        <EntityTypeShape EntityType="nabhModel.CIValue" Width="1.5" PointX="39.375" PointY="22.125" />
+        <EntityTypeShape EntityType="nabhModel.ClinicalServiceType" Width="1.5" PointX="21" PointY="84.625" />
+        <EntityTypeShape EntityType="nabhModel.ClinicalServiceValue" Width="1.5" PointX="23.25" PointY="44.5" />
+        <EntityTypeShape EntityType="nabhModel.ClinicalTrialGeneralInfo" Width="1.5" PointX="40.375" PointY="25.125" />
+        <EntityTypeShape EntityType="nabhModel.ClinicType" Width="1.5" PointX="9" PointY="52" />
+        <EntityTypeShape EntityType="nabhModel.ClinicTypeValue" Width="1.5" PointX="11.25" PointY="39.75" />
+        <EntityTypeShape EntityType="nabhModel.ClosedTrainingDetail" Width="1.5" PointX="40.375" PointY="32.125" />
+        <EntityTypeShape EntityType="nabhModel.ComplaintResponseDocument" Width="1.5" PointX="35.375" PointY="39.125" />
+        <EntityTypeShape EntityType="nabhModel.Complaint" Width="1.5" PointX="37.375" PointY="39.125" />
+        <EntityTypeShape EntityType="nabhModel.ComplaintsRemark" Width="1.5" PointX="40.375" PointY="38.125" />
+        <EntityTypeShape EntityType="nabhModel.ContactPerson" Width="1.5" PointX="8.25" PointY="339.75" />
+        <EntityTypeShape EntityType="nabhModel.CTDocumentAttachment" Width="1.5" PointX="41.375" PointY="22.125" />
+        <EntityTypeShape EntityType="nabhModel.CustomerData" Width="1.5" PointX="8.25" PointY="357.375" />
+        <EntityTypeShape EntityType="nabhModel.DaysWorkingHour" Width="1.5" PointX="8.25" PointY="145.5" />
+        <EntityTypeShape EntityType="nabhModel.DeficienciesReport" Width="1.5" PointX="14.25" PointY="29.125" />
+        <EntityTypeShape EntityType="nabhModel.Demo_CopyOfHCO" Width="1.5" PointX="28.375" PointY="40.125" />
+        <EntityTypeShape EntityType="nabhModel.Demo_DataEntryLevel" Width="1.5" PointX="30.375" PointY="40.125" />
+        <EntityTypeShape EntityType="nabhModel.Demo_DataSHCO" Width="1.5" PointX="42.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.Demo_EntryLevelHCO" Width="1.5" PointX="42.375" PointY="5.125" />
+        <EntityTypeShape EntityType="nabhModel.Demo_IterativeHCO" Width="1.5" PointX="42.375" PointY="9.125" />
+        <EntityTypeShape EntityType="nabhModel.Demo_IterativeSHCO" Width="1.5" PointX="42.375" PointY="13.125" />
+        <EntityTypeShape EntityType="nabhModel.DentalClinicsApplication" Width="1.5" PointX="8.25" PointY="470" />
+        <EntityTypeShape EntityType="nabhModel.DentalEquipment" Width="1.5" PointX="17.25" PointY="45.625" />
+        <EntityTypeShape EntityType="nabhModel.DentalFacilitiesApplication" Width="1.5" PointX="42.375" PointY="25.125" />
+        <EntityTypeShape EntityType="nabhModel.DentalLabData" Width="1.5" PointX="18.25" PointY="57" />
+        <EntityTypeShape EntityType="nabhModel.DentalOutDepartment" Width="1.5" PointX="8.25" PointY="476.375" />
+        <EntityTypeShape EntityType="nabhModel.DermatologyClinicsApplication" Width="1.5" PointX="42.375" PointY="32.125" />
+        <EntityTypeShape EntityType="nabhModel.DetailsofManual" Width="1.5" PointX="42.375" PointY="17.125" />
+        <EntityTypeShape EntityType="nabhModel.DetailsofManualValue" Width="1.5" PointX="42.375" PointY="38.125" />
+        <EntityTypeShape EntityType="nabhModel.DiagnosticEquipValue" Width="1.5" PointX="8.25" PointY="384.125" />
+        <EntityTypeShape EntityType="nabhModel.DigitalHealth_MITRA_Empanelment_Applications" Width="1.5" PointX="39.375" PointY="41.125" />
+        <EntityTypeShape EntityType="nabhModel.DocumentAttachment" Width="1.5" PointX="22.25" PointY="62.5" />
+        <EntityTypeShape EntityType="nabhModel.EchsApplicant" Width="1.5" PointX="35.375" PointY="11" />
+        <EntityTypeShape EntityType="nabhModel.EchsApplicantChangeLog" Width="1.5" PointX="37.625" PointY="9.5" />
+        <EntityTypeShape EntityType="nabhModel.ECHSRecommendedList" Width="1.5" PointX="37.625" PointY="12.5" />
+        <EntityTypeShape EntityType="nabhModel.EmegencyEquipValue" Width="1.5" PointX="43.375" PointY="20.125" />
+        <EntityTypeShape EntityType="nabhModel.EmergencyApplication" Width="1.5" PointX="8.25" PointY="344" />
+        <EntityTypeShape EntityType="nabhModel.EmergencyBedOther" Width="1.5" PointX="25.375" PointY="42.125" />
+        <EntityTypeShape EntityType="nabhModel.EmergencyData" Width="1.5" PointX="44.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.EmergencyEquipment" Width="1.5" PointX="44.375" PointY="5.125" />
+        <EntityTypeShape EntityType="nabhModel.EmergencyStaffValue" Width="1.5" PointX="44.375" PointY="8.125" />
+        <EntityTypeShape EntityType="nabhModel.EntrylevelAyushCenterapplication" Width="1.5" PointX="44.375" PointY="11.125" />
+        <EntityTypeShape EntityType="nabhModel.EntryLevelDentalClinicsApplication" Width="1.5" PointX="44.375" PointY="23.125" />
+        <EntityTypeShape EntityType="nabhModel.Equipment" Width="1.5" PointX="8.25" PointY="235.25" />
+        <EntityTypeShape EntityType="nabhModel.Equipments2" Width="1.5" PointX="8.25" PointY="439.125" />
+        <EntityTypeShape EntityType="nabhModel.EquipmentsMI" Width="1.5" PointX="8.25" PointY="214.5" />
+        <EntityTypeShape EntityType="nabhModel.EthicsCommitteeInfo" Width="1.5" PointX="37.375" PointY="17.5" />
+        <EntityTypeShape EntityType="nabhModel.EventAddress" Width="1.5" PointX="15" PointY="67.875" />
+        <EntityTypeShape EntityType="nabhModel.eventpaymentDetailRemark" Width="1.5" PointX="19" PointY="49.375" />
+        <EntityTypeShape EntityType="nabhModel.EvidenceAttachmentBloodBank" Width="1.5" PointX="24.5" PointY="7.375" />
+        <EntityTypeShape EntityType="nabhModel.EvidenceAttachmentOther" Width="1.5" PointX="24.5" PointY="60.375" />
+        <EntityTypeShape EntityType="nabhModel.EvidenceAttachment" Width="1.5" PointX="16.5" PointY="49.375" />
+        <EntityTypeShape EntityType="nabhModel.ExtraDocument" Width="1.5" PointX="8.25" PointY="396.125" />
+        <EntityTypeShape EntityType="nabhModel.FAQ" Width="1.5" PointX="27.375" PointY="43.125" />
+        <EntityTypeShape EntityType="nabhModel.Feedback" Width="1.5" PointX="3" PointY="46.875" />
+        <EntityTypeShape EntityType="nabhModel.FeedBackMaster" Width="1.5" PointX="44.375" PointY="30.125" />
+        <EntityTypeShape EntityType="nabhModel.FeedbackValue" Width="1.5" PointX="14.25" PointY="25" />
+        <EntityTypeShape EntityType="nabhModel.FinalAssessmentReport" Width="1.5" PointX="23.25" PointY="17.375" />
+        <EntityTypeShape EntityType="nabhModel.FOGSIApplication" Width="1.5" PointX="8.25" PointY="423.5" />
+        <EntityTypeShape EntityType="nabhModel.ForwardedComplaint" Width="1.5" PointX="32.375" PointY="43.125" />
+        <EntityTypeShape EntityType="nabhModel.GroupDiscount" Width="1.5" PointX="11.25" PointY="35.625" />
+        <EntityTypeShape EntityType="nabhModel.HCOApplicantChangeLog" Width="1.5" PointX="11" PointY="59.625" />
+        <EntityTypeShape EntityType="nabhModel.HCOBulkPaymentDetail" Width="1.5" PointX="3" PointY="15.375" />
+        <EntityTypeShape EntityType="nabhModel.HCOPanNumber" Width="1.5" PointX="44.375" PointY="33.125" />
+        <EntityTypeShape EntityType="nabhModel.HCOProgressiveList" Width="1.5" PointX="11" PointY="62.625" />
+        <EntityTypeShape EntityType="nabhModel.HCOScopeAndCertificateList" Width="1.5" PointX="34.375" PointY="43.125" />
+        <EntityTypeShape EntityType="nabhModel.HospitalApplication" Width="1.5" PointX="8.25" PointY="442.5" />
+        <EntityTypeShape EntityType="nabhModel.IDocument" Width="1.5" PointX="39.875" PointY="3.25" />
+        <EntityTypeShape EntityType="nabhModel.IEvent" Width="1.5" PointX="37.625" PointY="2.375" />
+        <EntityTypeShape EntityType="nabhModel.IEventStatu" Width="1.5" PointX="35.375" PointY="0.75" />
+        <EntityTypeShape EntityType="nabhModel.IEventType" Width="1.5" PointX="35.375" PointY="6.25" />
+        <EntityTypeShape EntityType="nabhModel.InC" Width="1.5" PointX="17" PointY="27.625" />
+        <EntityTypeShape EntityType="nabhModel.IndividualEducationExperience" Width="1.5" PointX="32.625" PointY="26.625" />
+        <EntityTypeShape EntityType="nabhModel.InfectionControlClinicChecklist" Width="1.5" PointX="44.375" PointY="36.125" />
+        <EntityTypeShape EntityType="nabhModel.InfectionControlClinicChecklistValue" Width="1.5" PointX="44.375" PointY="39.125" />
+        <EntityTypeShape EntityType="nabhModel.InfectionControlEquipmentChecklist" Width="1.5" PointX="41.375" PointY="43.125" />
+        <EntityTypeShape EntityType="nabhModel.InfectionControlEquipmentChecklistValue" Width="1.5" PointX="43.375" PointY="43.125" />
+        <EntityTypeShape EntityType="nabhModel.InpatientCare" Width="1.5" PointX="8.25" PointY="48.5" />
+        <EntityTypeShape EntityType="nabhModel.insert_shco_listambulatory" Width="1.5" PointX="45.375" PointY="20.125" />
+        <EntityTypeShape EntityType="nabhModel.IOrganization" Width="1.5" PointX="35.375" PointY="3.5" />
+        <EntityTypeShape EntityType="nabhModel.IRCA_CheckPoints" Width="1.5" PointX="29.375" PointY="44.125" />
+        <EntityTypeShape EntityType="nabhModel.IRCA_CheckPoints2" Width="1.5" PointX="36.375" PointY="44.125" />
+        <EntityTypeShape EntityType="nabhModel.IRCA_CheckPointsFileUpload" Width="1.5" PointX="10.5" PointY="453.125" />
+        <EntityTypeShape EntityType="nabhModel.IRCA_CheckPointsFileUpload2" Width="1.5" PointX="10.5" PointY="450.125" />
+        <EntityTypeShape EntityType="nabhModel.IRCA_CheckPointsForStaff" Width="1.5" PointX="45.375" PointY="43.125" />
+        <EntityTypeShape EntityType="nabhModel.IRCA_CheckPointsValues" Width="1.5" PointX="8.25" PointY="450.625" />
+        <EntityTypeShape EntityType="nabhModel.IRCAApplication" Width="1.5" PointX="46.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.Journal" Width="1.5" PointX="46.375" PointY="10.125" />
+        <EntityTypeShape EntityType="nabhModel.JournalCategory" Width="1.5" PointX="46.375" PointY="15.125" />
+        <EntityTypeShape EntityType="nabhModel.JournalFile" Width="1.5" PointX="46.375" PointY="23.125" />
+        <EntityTypeShape EntityType="nabhModel.JournalOrder" Width="1.5" PointX="46.375" PointY="26.125" />
+        <EntityTypeShape EntityType="nabhModel.LaboratoryEquipment" Width="1.5" PointX="8.25" PointY="335.875" />
+        <EntityTypeShape EntityType="nabhModel.LaboratoryPersonal" Width="1.5" PointX="46.375" PointY="29.125" />
+        <EntityTypeShape EntityType="nabhModel.LaboratoryPersonnel" Width="1.5" PointX="8.25" PointY="505.875" />
+        <EntityTypeShape EntityType="nabhModel.LaboratoryTest" Width="1.5" PointX="8.25" PointY="310.375" />
+        <EntityTypeShape EntityType="nabhModel.LabServiceValue" Width="1.5" PointX="8.25" PointY="416.875" />
+        <EntityTypeShape EntityType="nabhModel.Layout" Width="1.5" PointX="8.25" PointY="329.75" />
+        <EntityTypeShape EntityType="nabhModel.LicenseAttachment" Width="1.5" PointX="8.25" PointY="399.25" />
+        <EntityTypeShape EntityType="nabhModel.LicenseType" Width="1.5" PointX="23" PointY="73.5" />
+        <EntityTypeShape EntityType="nabhModel.LicenseValue" Width="1.5" PointX="25.25" PointY="31.125" />
+        <EntityTypeShape EntityType="nabhModel.MainServicesValueCareHome" Width="1.5" PointX="46.375" PointY="34.125" />
+        <EntityTypeShape EntityType="nabhModel.ManayataScoreSheetRight" Width="1.5" PointX="11.25" PointY="32.25" />
+        <EntityTypeShape EntityType="nabhModel.mapAssessmentTypeName" Width="1.5" PointX="8.25" PointY="1.5" />
+        <EntityTypeShape EntityType="nabhModel.mapAssessorClaimWithAssessorAssignment" Width="1.5" PointX="46.375" PointY="37.125" />
+        <EntityTypeShape EntityType="nabhModel.MapAssessorNonComplianceObservationAndScoreSheetValue" Width="1.5" PointX="24.5" PointY="52.625" />
+        <EntityTypeShape EntityType="nabhModel.MessageBoard" Width="1.5" PointX="47.375" PointY="18.125" />
+        <EntityTypeShape EntityType="nabhModel.MessageComment" Width="1.5" PointX="46.375" PointY="40.125" />
+        <EntityTypeShape EntityType="nabhModel.MISApplication" Width="1.5" PointX="8.25" PointY="499.5" />
+        <EntityTypeShape EntityType="nabhModel.MiscellaneousExpense" Width="1.5" PointX="25.375" PointY="46.125" />
+        <EntityTypeShape EntityType="nabhModel.MITRA_Empanelment_Applications" Width="1.5" PointX="31.375" PointY="46.125" />
+        <EntityTypeShape EntityType="nabhModel.MitraApplication" Width="1.5" PointX="30.375" PointY="14.125" />
+        <EntityTypeShape EntityType="nabhModel.MitraEnclosure" Width="1.5" PointX="32.625" PointY="16.625" />
+        <EntityTypeShape EntityType="nabhModel.MitraHCOsupported" Width="1.5" PointX="32.625" PointY="7.25" />
+        <EntityTypeShape EntityType="nabhModel.MitraIndvInfrastructure" Width="1.5" PointX="32.625" PointY="12.75" />
+        <EntityTypeShape EntityType="nabhModel.MitraOrgInfrastructure" Width="1.5" PointX="32.625" PointY="3.75" />
+        <EntityTypeShape EntityType="nabhModel.MitraProfessionalsEnclosure" Width="1.5" PointX="34.875" PointY="21.5" />
+        <EntityTypeShape EntityType="nabhModel.MLPApplication" Width="1.5" PointX="8.25" PointY="509.5" />
+        <EntityTypeShape EntityType="nabhModel.MLPLaboratoryPersonal" Width="1.5" PointX="47.375" PointY="43.125" />
+        <EntityTypeShape EntityType="nabhModel.MLPOrganizationChart" Width="1.5" PointX="8.25" PointY="284" />
+        <EntityTypeShape EntityType="nabhModel.Modality" Width="1.5" PointX="15" PointY="64.75" />
+        <EntityTypeShape EntityType="nabhModel.ModalityValue" Width="1.5" PointX="17.25" PointY="42.75" />
+        <EntityTypeShape EntityType="nabhModel.MostFrequentData" Width="1.5" PointX="8.25" PointY="172.375" />
+        <EntityTypeShape EntityType="nabhModel.MVTF2Application" Width="1.5" PointX="48.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.MVTFApplication" Width="1.5" PointX="48.375" PointY="22.125" />
+        <EntityTypeShape EntityType="nabhModel.MVTFBranchDetail" Width="1.5" PointX="48.375" PointY="13.125" />
+        <EntityTypeShape EntityType="nabhModel.MVTFFacility" Width="1.5" PointX="25.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.MVTFGeneralPolicy" Width="1.5" PointX="33.375" PointY="47.125" />
+        <EntityTypeShape EntityType="nabhModel.MVTFHospitalList" Width="1.5" PointX="48.375" PointY="33.125" />
+        <EntityTypeShape EntityType="nabhModel.MVTFOrganisationChart" Width="1.5" PointX="48.375" PointY="36.125" />
+        <EntityTypeShape EntityType="nabhModel.MVTFPatientDetail" Width="1.5" PointX="48.375" PointY="40.125" />
+        <EntityTypeShape EntityType="nabhModel.MVTFPrivacy" Width="1.5" PointX="41.375" PointY="47.125" />
+        <EntityTypeShape EntityType="nabhModel.MVTFStaffInformation" Width="1.5" PointX="49.375" PointY="16.125" />
+        <EntityTypeShape EntityType="nabhModel.MVTFStaffTrainingInfo" Width="1.5" PointX="27.375" PointY="48.125" />
+        <EntityTypeShape EntityType="nabhModel.NabhAttachment" Width="1.5" PointX="11.25" PointY="47.5" />
+        <EntityTypeShape EntityType="nabhModel.NabhClosedEvent" Width="1.5" PointX="35.375" PointY="48.125" />
+        <EntityTypeShape EntityType="nabhModel.NabhStandardRequirement" Width="1.5" PointX="43.375" PointY="48.125" />
+        <EntityTypeShape EntityType="nabhModel.NewAssessorNonComplianceObservation" Width="1.5" PointX="49.375" PointY="43.125" />
+        <EntityTypeShape EntityType="nabhModel.OPDIPD" Width="1.5" PointX="8.25" PointY="367" />
+        <EntityTypeShape EntityType="nabhModel.otherEMPHCODetail" Width="1.5" PointX="45.375" PointY="48.125" />
+        <EntityTypeShape EntityType="nabhModel.OtherServicesValue" Width="1.5" PointX="8.25" PointY="44.5" />
+        <EntityTypeShape EntityType="nabhModel.OTPgenerateForClaim" Width="1.5" PointX="47.375" PointY="48.125" />
+        <EntityTypeShape EntityType="nabhModel.OutPatientService" Width="1.5" PointX="8.25" PointY="413.75" />
+        <EntityTypeShape EntityType="nabhModel.Panchakarmaapplication" Width="1.5" PointX="8.25" PointY="370.375" />
+        <EntityTypeShape EntityType="nabhModel.Participant" Width="1.5" PointX="8.25" PointY="188.625" />
+        <EntityTypeShape EntityType="nabhModel.PaymentDetail" Width="1.5" PointX="8.25" PointY="248" />
+        <EntityTypeShape EntityType="nabhModel.PaymentTransactionDetail" Width="1.5" PointX="49.375" PointY="48.125" />
+        <EntityTypeShape EntityType="nabhModel.PaymentType" Width="1.5" PointX="50.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.PHCApplication" Width="1.5" PointX="8.25" PointY="269.625" />
+        <EntityTypeShape EntityType="nabhModel.PHCService" Width="1.5" PointX="8.25" PointY="483" />
+        <EntityTypeShape EntityType="nabhModel.placelocation" Width="1.5" PointX="50.375" PointY="5.125" />
+        <EntityTypeShape EntityType="nabhModel.PMJAYApplication" Width="1.5" PointX="8.25" PointY="405.5" />
+        <EntityTypeShape EntityType="nabhModel.PmJayDocument" Width="1.5" PointX="13.5" PointY="49.75" />
+        <EntityTypeShape EntityType="nabhModel.PmJayQuestion" Width="1.5" PointX="9" PointY="55.375" />
+        <EntityTypeShape EntityType="nabhModel.PmJayValue" Width="1.5" PointX="11.25" PointY="43.125" />
+        <EntityTypeShape EntityType="nabhModel.POForClaimForm" Width="1.5" PointX="6" PointY="73.375" />
+        <EntityTypeShape EntityType="nabhModel.PreAssessmentReport" Width="1.5" PointX="14.25" PointY="45.375" />
+        <EntityTypeShape EntityType="nabhModel.PreAssessmentReportValue" Width="1.5" PointX="19.25" PointY="24.875" />
+        <EntityTypeShape EntityType="nabhModel.Professional" Width="1.5" PointX="32.625" PointY="19.875" />
+        <EntityTypeShape EntityType="nabhModel.Profile" Width="1.5" PointX="18.75" PointY="69.875" />
+        <EntityTypeShape EntityType="nabhModel.ProfilesAccessRightsLink" Width="1.5" PointX="24" PointY="69.875" />
+        <EntityTypeShape EntityType="nabhModel.ProgramOfficer" Width="1.5" PointX="50.375" PointY="9.125" />
+        <EntityTypeShape EntityType="nabhModel.ProjectApplication" Width="1.5" PointX="3" PointY="60.875" />
+        <EntityTypeShape EntityType="nabhModel.ProjectDeptValue" Width="1.5" PointX="50.375" PointY="13.125" />
+        <EntityTypeShape EntityType="nabhModel.ProjectUserDetail" Width="1.5" PointX="5.25" PointY="58.875" />
+        <EntityTypeShape EntityType="nabhModel.QAPApplication" Width="1.5" PointX="8.25" PointY="304.625" />
+        <EntityTypeShape EntityType="nabhModel.QAPOtherInfo" Width="1.5" PointX="23.25" PointY="48.5" />
+        <EntityTypeShape EntityType="nabhModel.QAPOtherInfoMaster" Width="1.5" PointX="21" PointY="88" />
+        <EntityTypeShape EntityType="nabhModel.QAPService" Width="1.5" PointX="8.25" PointY="205.375" />
+        <EntityTypeShape EntityType="nabhModel.QAPSpeciality" Width="1.5" PointX="8.25" PointY="232.5" />
+        <EntityTypeShape EntityType="nabhModel.QAPSupportDept" Width="1.5" PointX="8.25" PointY="313.875" />
+        <EntityTypeShape EntityType="nabhModel.QualityAndsafetyChecklistclinic" Width="1.5" PointX="50.375" PointY="20.125" />
+        <EntityTypeShape EntityType="nabhModel.QualityAndsafetyChecklistclinicValue" Width="1.5" PointX="50.375" PointY="23.125" />
+        <EntityTypeShape EntityType="nabhModel.QualityManualAssignedToAssessor" Width="1.5" PointX="17.25" PointY="39.875" />
+        <EntityTypeShape EntityType="nabhModel.QualityManualForwardStatu" Width="1.5" PointX="8.25" PointY="393.25" />
+        <EntityTypeShape EntityType="nabhModel.QualityManualReport" Width="1.5" PointX="8.25" PointY="351.5" />
+        <EntityTypeShape EntityType="nabhModel.QualityUpload" Width="1.5" PointX="50.375" PointY="27.125" />
+        <EntityTypeShape EntityType="nabhModel.RemarkByACMember" Width="1.5" PointX="8.25" PointY="281.125" />
+        <EntityTypeShape EntityType="nabhModel.ReviewMaster" Width="1.5" PointX="15" PointY="61.125" />
+        <EntityTypeShape EntityType="nabhModel.ReviewRemark" Width="1.5" PointX="17.25" PointY="35.625" />
+        <EntityTypeShape EntityType="nabhModel.ReviewUpdate" Width="1.5" PointX="20.25" PointY="36.875" />
+        <EntityTypeShape EntityType="nabhModel.SaveDigitalHealthApplicantList" Width="1.5" PointX="8.25" PointY="332.875" />
+        <EntityTypeShape EntityType="nabhModel.Scope" Width="1.5" PointX="50.375" PointY="30.125" />
+        <EntityTypeShape EntityType="nabhModel.ScopeCertificationValue" Width="1.5" PointX="14.25" PointY="35.125" />
+        <EntityTypeShape EntityType="nabhModel.ScopeServiceValue" Width="1.5" PointX="23.25" PointY="21.625" />
+        <EntityTypeShape EntityType="nabhModel.ScopeSpeciality" Width="1.5" PointX="16" PointY="56" />
+        <EntityTypeShape EntityType="nabhModel.ScopeSpecialities2" Width="1.5" PointX="50.375" PointY="33.125" />
+        <EntityTypeShape EntityType="nabhModel.ScopeSpecialityHospital" Width="1.5" PointX="50.375" PointY="36.125" />
+        <EntityTypeShape EntityType="nabhModel.ScopeValue" Width="1.5" PointX="14.25" PointY="41.5" />
+        <EntityTypeShape EntityType="nabhModel.ScoreSheetMasterOtherValue" Width="1.5" PointX="50.375" PointY="39.125" />
+        <EntityTypeShape EntityType="nabhModel.SecretariatMemberCapacity" Width="1.5" PointX="14.75" PointY="52.625" />
+        <EntityTypeShape EntityType="nabhModel.SecretariatMemberDocument" Width="1.5" PointX="51.375" PointY="16.125" />
+        <EntityTypeShape EntityType="nabhModel.SelfAssessmentToolkitNCObservation" Width="1.5" PointX="51.375" PointY="42.125" />
+        <EntityTypeShape EntityType="nabhModel.ServiceArea" Width="1.5" PointX="8.25" PointY="275.5" />
+        <EntityTypeShape EntityType="nabhModel.SHCOApplication" Width="1.5" PointX="8.25" PointY="432.25" />
+        <EntityTypeShape EntityType="nabhModel.ShortForAssessorTranning" Width="1.5" PointX="17" PointY="23.75" />
+        <EntityTypeShape EntityType="nabhModel.SpecialityMaster" Width="1.5" PointX="51.375" PointY="45.125" />
+        <EntityTypeShape EntityType="nabhModel.StaffInformation" Width="1.5" PointX="21" PointY="77.5" />
+        <EntityTypeShape EntityType="nabhModel.StaffInformation_BB" Width="1.5" PointX="8.25" PointY="479.5" />
+        <EntityTypeShape EntityType="nabhModel.StaffInformationAttachment" Width="1.5" PointX="8.25" PointY="492.5" />
+        <EntityTypeShape EntityType="nabhModel.StaffInformationEye" Width="1.5" PointX="6" PointY="70.125" />
+        <EntityTypeShape EntityType="nabhModel.StaffInformationMLP" Width="1.5" PointX="8.25" PointY="191.375" />
+        <EntityTypeShape EntityType="nabhModel.StaffInformationValue" Width="1.5" PointX="23.25" PointY="36.875" />
+        <EntityTypeShape EntityType="nabhModel.StaffInformationValueEye" Width="1.5" PointX="20.25" PointY="45.125" />
+        <EntityTypeShape EntityType="nabhModel.StandardOrder" Width="1.5" PointX="51.375" PointY="48.125" />
+        <EntityTypeShape EntityType="nabhModel.StokreApplication" Width="1.5" PointX="52.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.StrokeApplication" Width="1.5" PointX="8.25" PointY="316.875" />
+        <EntityTypeShape EntityType="nabhModel.StudentInformation" Width="1.5" PointX="52.375" PointY="8.125" />
+        <EntityTypeShape EntityType="nabhModel.StudentInformationEyeCare" Width="1.5" PointX="52.375" PointY="11.125" />
+        <EntityTypeShape EntityType="nabhModel.SupportDepartmentValue" Width="1.5" PointX="8.25" PointY="402.125" />
+        <EntityTypeShape EntityType="nabhModel.SurveillanceReport" Width="1.5" PointX="25.25" PointY="27.375" />
+        <EntityTypeShape EntityType="nabhModel.SurveyFeedback" Width="1.5" PointX="52.375" PointY="19.125" />
+        <EntityTypeShape EntityType="nabhModel.sysdiagram" Width="1.5" PointX="52.375" PointY="22.125" />
+        <EntityTypeShape EntityType="nabhModel.tblABDMFacility" Width="1.5" PointX="3" PointY="55.375" />
+        <EntityTypeShape EntityType="nabhModel.tblAccessType" Width="1.5" PointX="52.375" PointY="25.125" />
+        <EntityTypeShape EntityType="nabhModel.tblassessorprofilepic" Width="1.5" PointX="27.375" PointY="51.125" />
+        <EntityTypeShape EntityType="nabhModel.tblAssessorTrainingNominatedBy" Width="1.5" PointX="52.375" PointY="28.125" />
+        <EntityTypeShape EntityType="nabhModel.tblAudit" Width="1.5" PointX="52.375" PointY="33.125" />
+        <EntityTypeShape EntityType="nabhModel.tblContactDetail" Width="1.5" PointX="35.375" PointY="51.125" />
+        <EntityTypeShape EntityType="nabhModel.tblEfile" Width="1.5" PointX="52.375" PointY="36.125" />
+        <EntityTypeShape EntityType="nabhModel.TblError" Width="1.5" PointX="41.375" PointY="51.125" />
+        <EntityTypeShape EntityType="nabhModel.tblOrganisation" Width="1.5" PointX="51.375" PointY="51.125" />
+        <EntityTypeShape EntityType="nabhModel.tblPrivilege" Width="1.5" PointX="53.375" PointY="14.125" />
+        <EntityTypeShape EntityType="nabhModel.tblProjectDept" Width="1.5" PointX="53.375" PointY="40.125" />
+        <EntityTypeShape EntityType="nabhModel.tblProjectDeptStatu" Width="1.5" PointX="53.375" PointY="43.125" />
+        <EntityTypeShape EntityType="nabhModel.TblProject" Width="1.5" PointX="53.375" PointY="46.125" />
+        <EntityTypeShape EntityType="nabhModel.tblReference" Width="1.5" PointX="32.625" PointY="32.125" />
+        <EntityTypeShape EntityType="nabhModel.tblUser" Width="1.5" PointX="0.75" PointY="21.75" />
+        <EntityTypeShape EntityType="nabhModel.tblUsersInformation" Width="1.5" PointX="53.375" PointY="49.125" />
+        <EntityTypeShape EntityType="nabhModel.TblUserType" Width="1.5" PointX="54.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.TelephoneDetail" Width="1.5" PointX="54.375" PointY="5.125" />
+        <EntityTypeShape EntityType="nabhModel.ThreadComment" Width="1.5" PointX="54.375" PointY="8.125" />
+        <EntityTypeShape EntityType="nabhModel.ThreadDocument" Width="1.5" PointX="11.375" PointY="53.125" />
+        <EntityTypeShape EntityType="nabhModel.Thread" Width="1.5" PointX="54.375" PointY="17.125" />
+        <EntityTypeShape EntityType="nabhModel.ThreadStatu" Width="1.5" PointX="54.375" PointY="11.125" />
+        <EntityTypeShape EntityType="nabhModel.TrainingApplication" Width="1.5" PointX="8.25" PointY="263.875" />
+        <EntityTypeShape EntityType="nabhModel.Trainingcertificate" Width="1.5" PointX="54.375" PointY="21.125" />
+        <EntityTypeShape EntityType="nabhModel.UploadDocument" Width="1.5" PointX="28.25" PointY="27.625" />
+        <EntityTypeShape EntityType="nabhModel.UserLock" Width="1.5" PointX="54.375" PointY="25.125" />
+        <EntityTypeShape EntityType="nabhModel.User" Width="1.5" PointX="21" PointY="69.375" />
+        <EntityTypeShape EntityType="nabhModel.WellnessCenterApplication" Width="1.5" PointX="8.25" PointY="463.75" />
+        <EntityTypeShape EntityType="nabhModel.WorkshopApplication" Width="1.5" PointX="8.25" PointY="324.5" />
+        <EntityTypeShape EntityType="nabhModel.YogaServiceValue" Width="1.5" PointX="54.375" PointY="28.125" />
+        <EntityTypeShape EntityType="nabhModel.AppealsDetail" Width="1.5" PointX="54.375" PointY="31.125" />
+        <EntityTypeShape EntityType="nabhModel.applicationTypeView" Width="1.5" PointX="54.375" PointY="35.125" />
+        <EntityTypeShape EntityType="nabhModel.AyushCenter_insert_students" Width="1.5" PointX="43.375" PointY="53.125" />
+        <EntityTypeShape EntityType="nabhModel.BoardMeetingDocument" Width="1.5" PointX="45.375" PointY="53.125" />
+        <EntityTypeShape EntityType="nabhModel.circular" Width="1.5" PointX="55.375" PointY="38.125" />
+        <EntityTypeShape EntityType="nabhModel.ClinicalTrialSiteInfo" Width="1.5" PointX="55.375" PointY="42.125" />
+        <EntityTypeShape EntityType="nabhModel.CRSchemeApplication" Width="1.5" PointX="8.25" PointY="238.375" />
+        <EntityTypeShape EntityType="nabhModel.CTDecForm" Width="1.5" PointX="47.375" PointY="54.125" />
+        <EntityTypeShape EntityType="nabhModel.CTDocumentValue" Width="1.5" PointX="55.375" PointY="14.125" />
+        <EntityTypeShape EntityType="nabhModel.DeclarationFormAttachment" Width="1.5" PointX="55.375" PointY="47.125" />
+        <EntityTypeShape EntityType="nabhModel.ECDeclarartionForm" Width="1.5" PointX="39.625" PointY="18.375" />
+        <EntityTypeShape EntityType="nabhModel.Entry_Statutory_Compliances" Width="1.5" PointX="55.375" PointY="51.125" />
+        <EntityTypeShape EntityType="nabhModel.Entrylevelshcoapplication" Width="1.5" PointX="55.375" PointY="54.125" />
+        <EntityTypeShape EntityType="nabhModel.EventAttachment" Width="1.5" PointX="56.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.EyeApplication" Width="1.5" PointX="56.375" PointY="5.125" />
+        <EntityTypeShape EntityType="nabhModel.EyeOtherBedInformation" Width="1.5" PointX="13.375" PointY="55.125" />
+        <EntityTypeShape EntityType="nabhModel.FeedbackType" Width="1.5" PointX="56.375" PointY="17.125" />
+        <EntityTypeShape EntityType="nabhModel.HCOAccreditedList_Bak" Width="1.5" PointX="56.375" PointY="20.125" />
+        <EntityTypeShape EntityType="nabhModel.HCOAccreditedList_temp" Width="1.5" PointX="56.375" PointY="24.125" />
+        <EntityTypeShape EntityType="nabhModel.HCOApplicantList_temp" Width="1.5" PointX="27.375" PointY="55.125" />
+        <EntityTypeShape EntityType="nabhModel.HCOApplicantList_temp2" Width="1.5" PointX="56.375" PointY="28.125" />
+        <EntityTypeShape EntityType="nabhModel.HomeopathyApplication" Width="1.5" PointX="8.25" PointY="182.625" />
+        <EntityTypeShape EntityType="nabhModel.HospitalEntryLevel" Width="1.5" PointX="8.25" PointY="296.25" />
+        <EntityTypeShape EntityType="nabhModel.Insert_Shco_diagnosticService" Width="1.5" PointX="56.375" PointY="32.125" />
+        <EntityTypeShape EntityType="nabhModel.insert_Statutory_Compliances" Width="1.5" PointX="33.375" PointY="55.125" />
+        <EntityTypeShape EntityType="nabhModel.Insertshco_clinicalnAdmin" Width="1.5" PointX="35.375" PointY="55.125" />
+        <EntityTypeShape EntityType="nabhModel.insertshcostaffinfo" Width="1.5" PointX="56.375" PointY="35.125" />
+        <EntityTypeShape EntityType="nabhModel.InvestigatorDecForm" Width="1.5" PointX="49.375" PointY="55.125" />
+        <EntityTypeShape EntityType="nabhModel.InvestigatorsInfo" Width="1.5" PointX="51.375" PointY="55.125" />
+        <EntityTypeShape EntityType="nabhModel.misRegistrationDocument" Width="1.5" PointX="57.375" PointY="12.125" />
+        <EntityTypeShape EntityType="nabhModel.NetBanking" Width="1.5" PointX="57.375" PointY="38.125" />
+        <EntityTypeShape EntityType="nabhModel.NetBankingPaymentDetail" Width="1.5" PointX="41.375" PointY="56.125" />
+        <EntityTypeShape EntityType="nabhModel.NursingApplication" Width="1.5" PointX="57.375" PointY="41.125" />
+        <EntityTypeShape EntityType="nabhModel.NursingClinicalValue" Width="1.5" PointX="43.375" PointY="56.125" />
+        <EntityTypeShape EntityType="nabhModel.NursingOtherInformation" Width="1.5" PointX="57.375" PointY="48.125" />
+        <EntityTypeShape EntityType="nabhModel.NursingStaffDetail" Width="1.5" PointX="57.375" PointY="51.125" />
+        <EntityTypeShape EntityType="nabhModel.PaymentArchive" Width="1.5" PointX="57.375" PointY="54.125" />
+        <EntityTypeShape EntityType="nabhModel.PaymentHistory" Width="1.5" PointX="5.375" PointY="56.125" />
+        <EntityTypeShape EntityType="nabhModel.PMJAYScoreSheetMaster" Width="1.5" PointX="58.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.PublicNotice" Width="1.5" PointX="58.375" PointY="6.125" />
+        <EntityTypeShape EntityType="nabhModel.ReferenceDocumentsMaster" Width="1.5" PointX="58.375" PointY="15.125" />
+        <EntityTypeShape EntityType="nabhModel.ScopeByAssessor" Width="1.5" PointX="58.375" PointY="18.125" />
+        <EntityTypeShape EntityType="nabhModel.ScopeOfAccreditation" Width="1.5" PointX="58.375" PointY="22.125" />
+        <EntityTypeShape EntityType="nabhModel.ScoreSheetMaster" Width="1.5" PointX="58.375" PointY="26.125" />
+        <EntityTypeShape EntityType="nabhModel.ScoreSheetValue" Width="1.5" PointX="58.375" PointY="30.125" />
+        <EntityTypeShape EntityType="nabhModel.shco_AOAclinicalsupport" Width="1.5" PointX="58.375" PointY="34.125" />
+        <EntityTypeShape EntityType="nabhModel.shco_app" Width="1.5" PointX="8.25" PointY="495.375" />
+        <EntityTypeShape EntityType="nabhModel.shco_clinicalnAdmin" Width="1.5" PointX="59.375" PointY="10.125" />
+        <EntityTypeShape EntityType="nabhModel.shco_clinicalsupport" Width="1.5" PointX="35.375" PointY="58.125" />
+        <EntityTypeShape EntityType="nabhModel.Shco_diagnosticService" Width="1.5" PointX="59.375" PointY="37.125" />
+        <EntityTypeShape EntityType="nabhModel.shco_insert_students" Width="1.5" PointX="59.375" PointY="40.125" />
+        <EntityTypeShape EntityType="nabhModel.shcoex" Width="1.5" PointX="59.375" PointY="43.125" />
+        <EntityTypeShape EntityType="nabhModel.ShcoSpeciality" Width="1.5" PointX="59.375" PointY="46.125" />
+        <EntityTypeShape EntityType="nabhModel.shcostaffinfo" Width="1.5" PointX="59.375" PointY="49.125" />
+        <EntityTypeShape EntityType="nabhModel.SiddhaApplication" Width="1.5" PointX="8.25" PointY="208.5" />
+        <EntityTypeShape EntityType="nabhModel.StandardInventory" Width="1.5" PointX="59.375" PointY="52.125" />
+        <EntityTypeShape EntityType="nabhModel.Statutory_Compliances" Width="1.5" PointX="59.375" PointY="56.125" />
+        <EntityTypeShape EntityType="nabhModel.tblACDocument" Width="1.5" PointX="60.375" PointY="2.125" />
+        <EntityTypeShape EntityType="nabhModel.tblAgreemantDetail" Width="1.5" PointX="60.375" PointY="6.125" />
+        <EntityTypeShape EntityType="nabhModel.tblAyurveda_Clinical" Width="1.5" PointX="18.25" PointY="19.625" />
+        <EntityTypeShape EntityType="nabhModel.tblContactu" Width="1.5" PointX="60.375" PointY="13.125" />
+        <EntityTypeShape EntityType="nabhModel.tblHCOPI" Width="1.5" PointX="60.375" PointY="16.125" />
+        <EntityTypeShape EntityType="nabhModel.tblInfectionCtrl" Width="1.5" PointX="60.375" PointY="20.125" />
+        <EntityTypeShape EntityType="nabhModel.tblInfectionCtrlmaster" Width="1.5" PointX="60.375" PointY="24.125" />
+        <EntityTypeShape EntityType="nabhModel.tblInfectionCtrlvalue" Width="1.5" PointX="27.375" PointY="59.125" />
+        <EntityTypeShape EntityType="nabhModel.tblRoleDetail" Width="1.5" PointX="60.375" PointY="27.125" />
+        <EntityTypeShape EntityType="nabhModel.tblRoles_Profile" Width="1.5" PointX="60.375" PointY="30.125" />
+        <EntityTypeShape EntityType="nabhModel.tblTrainingfeedback" Width="1.5" PointX="43.375" PointY="59.125" />
+        <EntityTypeShape EntityType="nabhModel.tblTrainingTest" Width="1.5" PointX="45.375" PointY="59.125" />
+        <EntityTypeShape EntityType="nabhModel.TLDStaffInformation" Width="1.5" PointX="60.375" PointY="33.125" />
+        <EntityTypeShape EntityType="nabhModel.UnaniApplication" Width="1.5" PointX="8.25" PointY="387.25" />
+        <EntityTypeShape EntityType="nabhModel.WCService" Width="1.5" PointX="8.25" PointY="293.75" />
+        <EntityTypeShape EntityType="nabhModel.YogaApplication" Width="1.5" PointX="8.25" PointY="217.75" />
+        <AssociationConnector Association="nabhModel.FK_ABPMJAYScoreSheetRight_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ABPMJAYScoreSheetRight_AssessmentType" />
+        <AssociationConnector Association="nabhModel.FK_ProfilesAccessRightsLink_AccessRights" />
+        <AssociationConnector Association="nabhModel.FK_AccreditationAndCertificationDetail_Applications" />
+        <AssociationConnector Association="nabhModel.FK_AccreditationAndCertificationDocument_AccreditationAndCertificationDetail" />
+        <AssociationConnector Association="nabhModel.FK_Action_Action" />
+        <AssociationConnector Association="nabhModel.FK_AERBApprovalDetails_AERBLicenseType" />
+        <AssociationConnector Association="nabhModel.FK_AERBApprovalDetails_Applications" />
+        <AssociationConnector Association="nabhModel.FK_AllopathicClinics_Applications" />
+        <AssociationConnector Association="nabhModel.FK_DermatologyClinics_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ApplicationAccCriteria_ApplicationType" />
+        <AssociationConnector Association="nabhModel.FK_ApplicationCurrentStatus_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ApplicationCurrentStatus_ApplicationStatus" />
+        <AssociationConnector Association="nabhModel.FK_ApplicationCurrentStatus_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_ApplicationEditPermission_Applications" />
+        <AssociationConnector Association="nabhModel.ApplicationID" />
+        <AssociationConnector Association="nabhModel.FK__AssessorN__Compl__22EA20B8" />
+        <AssociationConnector Association="nabhModel.FK__AyurvedaA__Appli__097F5470" />
+        <AssociationConnector Association="nabhModel.FK__Deficienc__Appli__14F1071C" />
+        <AssociationConnector Association="nabhModel.FK__Homeopath__Appli__30992191" />
+        <AssociationConnector Association="nabhModel.FK__HospitalE__Appli__122A7461" />
+        <AssociationConnector Association="nabhModel.FK__HospitalE__Appli__32816A03" />
+        <AssociationConnector Association="nabhModel.FK__NabhAttac__Appli__300F11AC" />
+        <AssociationConnector Association="nabhModel.FK__Panchakar__Appli__015F0FBB" />
+        <AssociationConnector Association="nabhModel.FK__PHCServic__Appli__5540965B" />
+        <AssociationConnector Association="nabhModel.FK__PreAssess__Appli__797DF6D1" />
+        <AssociationConnector Association="nabhModel.FK__ReviewRem__Appli__6E96540A" />
+        <AssociationConnector Association="nabhModel.FK__shco_app__applic__039170F0" />
+        <AssociationConnector Association="nabhModel.FK__SiddhaApp__Appli__0579B962" />
+        <AssociationConnector Association="nabhModel.FK__tblAyurve__appli__0FF747D5" />
+        <AssociationConnector Association="nabhModel.FK__UnaniAppl__Appli__13C7D8B9" />
+        <AssociationConnector Association="nabhModel.FK__YogaAppli__Appli__1A74D648" />
+        <AssociationConnector Association="nabhModel.FK_Applications_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_ARTClinicsApplications_Applications" />
+        <AssociationConnector Association="nabhModel.FK_AssessorBloodBankNC_Applications" />
+        <AssociationConnector Association="nabhModel.FK_AssessorConfidentiality_Applications" />
+        <AssociationConnector Association="nabhModel.FK_AssessorNonComplianceObservation_Applications" />
+        <AssociationConnector Association="nabhModel.FK_BankDetailsOffLinePayment_Applications" />
+        <AssociationConnector Association="nabhModel.FK_BloodBank_Applications" />
+        <AssociationConnector Association="nabhModel.FK_BloodBankTypeValues_Applications" />
+        <AssociationConnector Association="nabhModel.FK_BloodStorageCentreApplication_Applications" />
+        <AssociationConnector Association="nabhModel.FK_BloodStorageCentreAssociatedWithBloodBank_Applications" />
+        <AssociationConnector Association="nabhModel.FK_BloodStorageCentreTypeValues_Applications" />
+        <AssociationConnector Association="nabhModel.FK_CareHomeApplication_Applications" />
+        <AssociationConnector Association="nabhModel.FK_CHC_Applications" />
+        <AssociationConnector Association="nabhModel.FK_CHCServices_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ClinicalServiceValue_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ClinicTypeValue_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ContactPerson_Applications" />
+        <AssociationConnector Association="nabhModel.FK_CRSchemeApplication_Applications" />
+        <AssociationConnector Association="nabhModel.FK_CustomerData_Applications" />
+        <AssociationConnector Association="nabhModel.FK_DaysWorkingHours_Applications" />
+        <AssociationConnector Association="nabhModel.FK_DeatialsOfLaboratoryEquipment_Applications" />
+        <AssociationConnector Association="nabhModel.FK_DentalEquipment_Applications" />
+        <AssociationConnector Association="nabhModel.FK_DentalFacilitiesApplicationB_Applications" />
+        <AssociationConnector Association="nabhModel.FK_DentalOutDepartment_Applications" />
+        <AssociationConnector Association="nabhModel.FK_DetailsOfLaboratoryPersonnel_Applications" />
+        <AssociationConnector Association="nabhModel.FK_DetailsOfLaboratoryTest_Applications" />
+        <AssociationConnector Association="nabhModel.FK_EmergencyApplication_Applications" />
+        <AssociationConnector Association="nabhModel.FK_Equipment_Applications" />
+        <AssociationConnector Association="nabhModel.FK_Equipments2_Applications" />
+        <AssociationConnector Association="nabhModel.FK_EquipmentsMIS_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ExtraDocuments_Applications" />
+        <AssociationConnector Association="nabhModel.FK_FinalAssessmentReport_Applications" />
+        <AssociationConnector Association="nabhModel.FK_FOGSI_Applications" />
+        <AssociationConnector Association="nabhModel.FK_GroupDiscount_Applications" />
+        <AssociationConnector Association="nabhModel.FK_Hospitals_Applications" />
+        <AssociationConnector Association="nabhModel.FK_InpatientCare_Applications" />
+        <AssociationConnector Association="nabhModel.FK_IRCA_CheckPointsValues_ApplicationId" />
+        <AssociationConnector Association="nabhModel.FK_LabServiceValues_Applications" />
+        <AssociationConnector Association="nabhModel.FK_Layout_Applications" />
+        <AssociationConnector Association="nabhModel.FK_LicenseAttachment_Applications" />
+        <AssociationConnector Association="nabhModel.FK_LicenseValue_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ManayataScoreSheetRight_Applications" />
+        <AssociationConnector Association="nabhModel.FK_MIS_Applications" />
+        <AssociationConnector Association="nabhModel.FK_MLP_Applications" />
+        <AssociationConnector Association="nabhModel.FK_MLPOrganizationChart_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ModalityValue_Applications" />
+        <AssociationConnector Association="nabhModel.FK_MostFrequentData_Applications" />
+        <AssociationConnector Association="nabhModel.FK_OPDIPD_Applications" />
+        <AssociationConnector Association="nabhModel.FK_OtherServicesValue_Applications" />
+        <AssociationConnector Association="nabhModel.FK_OutPatientService_Applications" />
+        <AssociationConnector Association="nabhModel.FK_Participants_Applications" />
+        <AssociationConnector Association="nabhModel.FK_PaymentDetails_Applications" />
+        <AssociationConnector Association="nabhModel.FK_PHC_Applications" />
+        <AssociationConnector Association="nabhModel.FK_PMJAY_Applications" />
+        <AssociationConnector Association="nabhModel.FK_PreAssessmentReport_Applications" />
+        <AssociationConnector Association="nabhModel.FK_QAP_Applications" />
+        <AssociationConnector Association="nabhModel.FK_QAPOtherInfo_Applications" />
+        <AssociationConnector Association="nabhModel.FK_QAPServices_Applications" />
+        <AssociationConnector Association="nabhModel.FK_QAPSpeciality_Applications" />
+        <AssociationConnector Association="nabhModel.FK_QAPSupportDept_Applications" />
+        <AssociationConnector Association="nabhModel.FK_QualityManualAssignedToAssessor_Applications" />
+        <AssociationConnector Association="nabhModel.FK_QualityManualForwardStatus_Applications" />
+        <AssociationConnector Association="nabhModel.FK_QualityManualReport_Applications" />
+        <AssociationConnector Association="nabhModel.FK_RemarkByACMembers_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_ReviewUpdates_Applications" />
+        <AssociationConnector Association="nabhModel.FK_SaveDigitalHealthApplicantList_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ScopeCertificationValues_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ScopeServiceValue_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ScopeValues_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ServiceArea_Applications" />
+        <AssociationConnector Association="nabhModel.FK_SHCO_Applications" />
+        <AssociationConnector Association="nabhModel.FK_StaffIbformation_BB_Applications" />
+        <AssociationConnector Association="nabhModel.FK_StaffInformationAttachment_Applications" />
+        <AssociationConnector Association="nabhModel.FK_StaffInformationMLP_Applications" />
+        <AssociationConnector Association="nabhModel.FK_StaffInformationValue_Applications" />
+        <AssociationConnector Association="nabhModel.FK_StaffInformationValueEye_Applications" />
+        <AssociationConnector Association="nabhModel.FK_Strokes_Applications" />
+        <AssociationConnector Association="nabhModel.FK_SupportDepartmentValues_Applications" />
+        <AssociationConnector Association="nabhModel.FK_SurveillanceReport_Applications" />
+        <AssociationConnector Association="nabhModel.FK_TrainingApplication_Applications" />
+        <AssociationConnector Association="nabhModel.FK_WCServices_Applications" />
+        <AssociationConnector Association="nabhModel.FK_WellnessCenter_Applications" />
+        <AssociationConnector Association="nabhModel.FK_WorkshopApplication_Applications" />
+        <AssociationConnector Association="nabhModel.fk1_AssessorAssignment" />
+        <AssociationConnector Association="nabhModel.PmJayValues_Applications" />
+        <AssociationConnector Association="nabhModel.FK_TimeLine_ApplicationStage" />
+        <AssociationConnector Association="nabhModel.FK_ApplicationStatusUpdatedByACMembers_ApplicationStatus" />
+        <AssociationConnector Association="nabhModel.FK_AssessorAssignment_ApplicationStatus" />
+        <AssociationConnector Association="nabhModel.FK_ApplicationStatusUpdatedByACMembers_Applications" />
+        <AssociationConnector Association="nabhModel.FK_ApplicationStatusUpdatedByACMembers_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK__tblAyurve__appli__10EB6C0E" />
+        <AssociationConnector Association="nabhModel.FK_ClinicalServiceType_ApplicationType" />
+        <AssociationConnector Association="nabhModel.FK_GroupDiscount_ApplicationType" />
+        <AssociationConnector Association="nabhModel.FK_LicenseType_ApplicationType" />
+        <AssociationConnector Association="nabhModel.FK_Modalities_ApplicationType" />
+        <AssociationConnector Association="nabhModel.FK_ReviewMaster_ApplicationType" />
+        <AssociationConnector Association="nabhModel.FK_ScopeBroadSpecialties_ApplicationType" />
+        <AssociationConnector Association="nabhModel.FK_StaffInformation_ApplicationType" />
+        <AssociationConnector Association="nabhModel.FK_StaffInformationEye_ApplicationType" />
+        <AssociationConnector Association="nabhModel.FK_UsersApplicationTypeAssigned_ApplicationType" />
+        <AssociationConnector Association="nabhModel.FK__assesment__Assig__67C95AEA" />
+        <AssociationConnector Association="nabhModel.FK_AssessorsRemarks_assesmentSchedule" />
+        <AssociationConnector Association="nabhModel.FK__Assessmen__Assig__4CE05A84" />
+        <AssociationConnector Association="nabhModel.FK__Deficienc__Asses__16D94F8E" />
+        <AssociationConnector Association="nabhModel.FK__PreAssess__Asses__7A721B0A" />
+        <AssociationConnector Association="nabhModel.FK__ReviewRem__Asses__707E9C7C" />
+        <AssociationConnector Association="nabhModel.FK_AssessorBloodBankNC_AssessorBloodBankNC2" />
+        <AssociationConnector Association="nabhModel.FK_AssessorNonComplianceObservation_AssessmentType" />
+        <AssociationConnector Association="nabhModel.FK_FeedbackValues_Applications" />
+        <AssociationConnector Association="nabhModel.FK_InC_AssessmentType" />
+        <AssociationConnector Association="nabhModel.FK_ManayataScoreSheetRight_AssessmentType" />
+        <AssociationConnector Association="nabhModel.FK_mapAssessmentTypeName_AssessmentType" />
+        <AssociationConnector Association="nabhModel.FK_ReviewUpdates_AssessmentType" />
+        <AssociationConnector Association="nabhModel.fk3_AssessorAssignment" />
+        <AssociationConnector Association="nabhModel.FK__AssessorN__Assig__1F198FD4" />
+        <AssociationConnector Association="nabhModel.FK__AssessorO__Assig__7FA0E47B" />
+        <AssociationConnector Association="nabhModel.fk_AssessorAssignment" />
+        <AssociationConnector Association="nabhModel.fk_AssessorAssignmentDate" />
+        <AssociationConnector Association="nabhModel.FK_DocumentAttachments_AssessorAssignment" />
+        <AssociationConnector Association="nabhModel.FK_UploadDocuments_AssessorAssignment" />
+        <AssociationConnector Association="nabhModel.fk2_AssessorAssignment" />
+        <AssociationConnector Association="nabhModel.FK_AssessorAvailability_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_AssessorBlogDocuments_AssessorDiscussionBlog" />
+        <AssociationConnector Association="nabhModel.FK__AssessorB__Compl__66A02C87" />
+        <AssociationConnector Association="nabhModel.FK_BloodBankNCAttachments_AssessorBloodBankNC" />
+        <AssociationConnector Association="nabhModel.FK_InC_AssessorCapacity" />
+        <AssociationConnector Association="nabhModel.FK_AssessorCertificate_AssessorCategory" />
+        <AssociationConnector Association="nabhModel.FK_AssessorCertificate_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_AssessorComments_AssessorDiscussionBlog" />
+        <AssociationConnector Association="nabhModel.FK_AssessorEvidenceAttachment_AssessorNonComplianceObservation" />
+        <AssociationConnector Association="nabhModel.FK_EvidenceAttachmentOthers_AssessorNonComplianceObservation" />
+        <AssociationConnector Association="nabhModel.FK_MapAssessorNonComplianceObservationAndScoreSheetValues_AssessorNonComplianceObservation" />
+        <AssociationConnector Association="nabhModel.FK__AssessorO__Asses__7C255952" />
+        <AssociationConnector Association="nabhModel.FK_AssessorQualifications_AssessorQualificationMaster" />
+        <AssociationConnector Association="nabhModel.FK_AssessorQualifications_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_AssessorsRemarks_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_UsersApplicationTypeAssigned_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_BloodBankTypeValues_BloodBankType" />
+        <AssociationConnector Association="nabhModel.FK_CGHSApplicantChangeLog_CGHSApplicant" />
+        <AssociationConnector Association="nabhModel.FK_CGHSRecommendedList_CGHSApplicant" />
+        <AssociationConnector Association="nabhModel.FK_POForClaimForm_ClaimTask" />
+        <AssociationConnector Association="nabhModel.FK_ClinicalServiceValue_ClinicalServiceType" />
+        <AssociationConnector Association="nabhModel.FK_ClinicTypeValue_ClinicType" />
+        <AssociationConnector Association="nabhModel.FK__Deficienc__Asses__60B24907" />
+        <AssociationConnector Association="nabhModel.FK_EvidenceAttachments_DeficienciesReport" />
+        <AssociationConnector Association="nabhModel.FK_DentalEquipment_ScopeSpecialities" />
+        <AssociationConnector Association="nabhModel.FK_DentalLabData_ScopeSpecialities" />
+        <AssociationConnector Association="nabhModel.FK_EchsApplicantChangeLog_EchsApplicant" />
+        <AssociationConnector Association="nabhModel.FK_ECHSRecommendedList_EchsApplicant" />
+        <AssociationConnector Association="nabhModel.FK_ECDeclarartionForm_EthicsCommitteeInfo" />
+        <AssociationConnector Association="nabhModel.FK_EventAddress_NabhEvent" />
+        <AssociationConnector Association="nabhModel.FK_EventOrderId" />
+        <AssociationConnector Association="nabhModel.FK_Feedback_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_FeedbackValues_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_FinalAssessmentReport_Users" />
+        <AssociationConnector Association="nabhModel.FK_FinalAssessmentReport_Users1" />
+        <AssociationConnector Association="nabhModel.FK_HCOApplicantChangeLog_HCOApplicantList" />
+        <AssociationConnector Association="nabhModel.FK_HCOProgressiveList_HCOApplicantList" />
+        <AssociationConnector Association="nabhModel.FK_tblusers_HCOBulkPaymentDetail" />
+        <AssociationConnector Association="nabhModel.FK_HospitalNumberOfBeds_ScopeSpecialities" />
+        <AssociationConnector Association="nabhModel.FK_IDocuments_IEvent" />
+        <AssociationConnector Association="nabhModel.FK_IEvent_IEventStatus" />
+        <AssociationConnector Association="nabhModel.FK_IEvent_IEventType" />
+        <AssociationConnector Association="nabhModel.FK_IEvent_IOrganizations" />
+        <AssociationConnector Association="nabhModel.FK_InC_SecretariatMemberCapacity" />
+        <AssociationConnector Association="nabhModel.FK_InC_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_IndividualEducationExperience_MitraApplications" />
+        <AssociationConnector Association="nabhModel.FK_InpatientCare_ScopeSpecialities" />
+        <AssociationConnector Association="nabhModel.FK_ParentId" />
+        <AssociationConnector Association="nabhModel.FK_CheckPointsFileUpload2_ParentId" />
+        <AssociationConnector Association="nabhModel.FK_LicenseValue_LicenseType" />
+        <AssociationConnector Association="nabhModel.FK_MitraHCOsupported_MitraApplications" />
+        <AssociationConnector Association="nabhModel.FK_MitraIndvInfrastructure_MitraApplications" />
+        <AssociationConnector Association="nabhModel.FK_MitraOrgEnclosures_MitraApplications" />
+        <AssociationConnector Association="nabhModel.FK_MitraOrgInfrastructure_MitraApplications" />
+        <AssociationConnector Association="nabhModel.FK_Professionals_MitraApplications" />
+        <AssociationConnector Association="nabhModel.FK_tblReferences_MitraApplications" />
+        <AssociationConnector Association="nabhModel.FK_MitraProfessionalsEnclosures_Professionals" />
+        <AssociationConnector Association="nabhModel.FK_ModalityValue_Modalities" />
+        <AssociationConnector Association="nabhModel.FK_MVTFFacilities_MVTFFacilities" />
+        <AssociationConnector Association="nabhModel.FK__NabhAttac__UserI__01BE3717" />
+        <AssociationConnector Association="nabhModel.FK__NabhAttac__UserI__5A4F643B" />
+        <AssociationConnector Association="nabhModel.FK_ShortForAssessorTranning_NabhEventMaster" />
+        <AssociationConnector Association="nabhModel.FK_OtherServicesValue_ScopeSpecialities" />
+        <AssociationConnector Association="nabhModel.FK_PaymentDetails_tblSubUTRNumber" />
+        <AssociationConnector Association="nabhModel.FK_PmJayDocuments_PmJayValues" />
+        <AssociationConnector Association="nabhModel.PmJayValues_PmJayQuestions" />
+        <AssociationConnector Association="nabhModel.FK_PreAssessmentReport_Users" />
+        <AssociationConnector Association="nabhModel.FK_PreAssessmentReport_Users1" />
+        <AssociationConnector Association="nabhModel.FK__PreAssess__Asses__7B663F43" />
+        <AssociationConnector Association="nabhModel.FK_ProcesssAssessorClaimFormLog_tblusers" />
+        <AssociationConnector Association="nabhModel.FK_ProfilesAccessRightsLink_Profiles" />
+        <AssociationConnector Association="nabhModel.FK_Users_Profiles" />
+        <AssociationConnector Association="nabhModel.FK_ProjectApplications_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_ProjectUserDetails_ProjectApplications" />
+        <AssociationConnector Association="nabhModel.FK_QAPOtherInfo_QAPOtherInfoMaster" />
+        <AssociationConnector Association="nabhModel.FK_QualityManualAssignedToAssessor_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK__ReviewRem__Revie__7172C0B5" />
+        <AssociationConnector Association="nabhModel.FK__ReviewRem__Asses__34D3C6C9" />
+        <AssociationConnector Association="nabhModel.FK_ReviewUpdates_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_ScopeCertificationValues_ScopeSpecialities" />
+        <AssociationConnector Association="nabhModel.FK_ScopeServiceValue_ScopeSpecialities" />
+        <AssociationConnector Association="nabhModel.FK__tblAyurve__speci__11DF9047" />
+        <AssociationConnector Association="nabhModel.FK_ScoprBroadValues_ScopeBroadSpecialties" />
+        <AssociationConnector Association="nabhModel.FK_SelfAssessmentAttachment_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_ShortForAssessorTranning_tblusers" />
+        <AssociationConnector Association="nabhModel.FK_StaffInformationValue_StaffInformation" />
+        <AssociationConnector Association="nabhModel.StaffInformationValueEye_StaffInformation" />
+        <AssociationConnector Association="nabhModel.FK_SurveillanceReport_Users" />
+        <AssociationConnector Association="nabhModel.FK_SurveillanceReport_Users1" />
+        <AssociationConnector Association="nabhModel.FK_tblABDMFacility_tblusers" />
+        <AssociationConnector Association="nabhModel.fk_tbluser_userId" />
+        <AssociationConnector Association="nabhModel.FK_UploadDocuments_tblUsers" />
+        <AssociationConnector Association="nabhModel.FK_VerifiedDocNumber_tblUsers" />
+        <EntityTypeShape EntityType="nabhModel.CertBackground" Width="1.5" PointX="12" PointY="23.75" />
+        <AssociationConnector Association="nabhModel.FK_CertBackground_NabhEvent" />
+        <EntityTypeShape EntityType="nabhModel.ApiUser" Width="1.5" PointX="57.375" PointY="62.125" />
+        <EntityTypeShape EntityType="nabhModel.tblApiKey" Width="1.5" PointX="59.625" PointY="60.125" />
+        <EntityTypeShape EntityType="nabhModel.tblApiRequestLog" Width="1.5" PointX="59.625" PointY="63.875" />
+        <AssociationConnector Association="nabhModel.FK_tblApiKey_ApiUser" />
+        <AssociationConnector Association="nabhModel.FK_tblApiRequestLog_ApiUser" />
+        <EntityTypeShape EntityType="nabhModel.tblWSOApplication" Width="1.5" PointX="20.375" PointY="4.75" />
+        <EntityTypeShape EntityType="nabhModel.ClosedCertBackground" Width="1.5" PointX="37.625" PointY="65.25" />
+        <AssociationConnector Association="nabhModel.FK_ClosedCertBackground_NABHClosedEvent" />
+        <EntityTypeShape EntityType="nabhModel.AssessmentDataForOtherPortal" Width="1.5" PointX="20" PointY="14.125" />
+        <EntityTypeShape EntityType="nabhModel.AssignmentDateDataForOtherPortal" Width="1.5" PointX="22.25" PointY="94.25" />
+        <AssociationConnector Association="nabhModel.FK_AssessmentDataForOtherPortal_ApplicationStatus" />
+        <AssociationConnector Association="nabhModel.FK_AssessmentDataForOtherPortal_ApplicationType" />
+        <AssociationConnector Association="nabhModel.FK_AssessmentDataForOtherPortal_AssessmentType" />
+        <AssociationConnector Association="nabhModel.FK_AssessmentDataForOtherPortal_City" />
+        <AssociationConnector Association="nabhModel.FK_AssessorAssignmentDate_AssessmentDataForOtherPortal" />
+        <EntityTypeShape EntityType="nabhModel.ApiPermission" Width="1.5" PointX="61.875" PointY="60.625" />
+        <AssociationConnector Association="nabhModel.FK_ApiPermission_tblApiKey" />
+        <AssociationConnector Association="nabhModel.FK_AssessmentDataForOtherPortal_ClaimTask" />
+        <AssociationConnector Association="nabhModel.FK_AssessmentDataForOtherPortal_ClaimTaskActivity" />
+        <EntityTypeShape EntityType="nabhModel.APIAuditLog" Width="1.5" PointX="59.625" PointY="68.25" />
+        <AssociationConnector Association="nabhModel.FK_APIAuditLog_ApiUser" />
+        <EntityTypeShape EntityType="nabhModel.vw_GetSizeHCOForPayment" Width="1.5" PointX="20.375" PointY="9.75" />
+        <EntityTypeShape EntityType="nabhModel.getAllPaymentDetail" Width="1.5" PointX="7.375" PointY="30.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
